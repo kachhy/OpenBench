@@ -1,0 +1,42 @@
+{
+    "private"  : false,
+    "nps"      : 1500000,
+    "base"     : "main",
+    "source"   : "https://github.com/kachhy/Axiom",
+
+    "build" : {
+        "path"      : ".",
+        "compilers" : ["g++"],
+        "cpuflags"  : ["AVX2", "FMA", "POPCNT"],
+        "systems"   : ["Windows", "Linux"]
+    },
+
+    "test_presets" : {
+		"default" : {
+            "base_branch"     : "main",
+            "book_name"       : "UHO_4060_v2.epd",
+            "test_bounds"     : "[0.00, 3.00]",
+            "test_confidence" : "[0.1, 0.05]",
+            "win_adj"         : "movecount=5 score=300",
+            "draw_adj"        : "movenumber=35 movecount=10 score=10"
+        },
+
+        "STC" : {
+            "both_options"      : "Threads=1 Hash=16",
+            "both_time_control" : "10.0+0.10",
+            "workload_size"     : 32
+        },
+
+        "LTC" : {
+            "both_options"      : "Threads=1 Hash=64",
+            "both_time_control" : "30.0+0.30",
+            "workload_size"     : 8
+        }
+    },
+
+	"tune_presets" : {
+    },
+
+    "datagen_presets" : {
+    }
+}
