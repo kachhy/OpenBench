@@ -31,6 +31,50 @@
             "both_options"      : "Threads=1 Hash=64",
             "both_time_control" : "60.0+0.60",
             "workload_size"     : 8
+        },
+
+        "NRSTC" : {
+            "both_options"      : "Threads=1 Hash=16",
+            "both_time_control" : "10.0+0.10",
+            "workload_size"     : 32,
+            "test_bounds"     : "[-3.00, 0.00]",
+            "test_confidence" : "[0.05, 0.05]"
+        },
+
+        "NRLTC" : {
+            "both_options"      : "Threads=1 Hash=64",
+            "both_time_control" : "60.0+0.60",
+            "workload_size"     : 8,
+            "test_bounds"     : "[-3.00, 0.00]",
+            "test_confidence" : "[0.05, 0.05]"
+        },
+
+        "HCE STC" : {
+            "both_options"      : "Threads=1 Hash=16 NNUE=false",
+            "both_time_control" : "10.0+0.10",
+            "workload_size"     : 32
+        },
+
+        "HCE LTC" : {
+            "both_options"      : "Threads=1 Hash=64 NNUE=false",
+            "both_time_control" : "60.0+0.60",
+            "workload_size"     : 8
+        },
+
+        "HCE NRSTC" : {
+            "both_options"      : "Threads=1 Hash=16 NNUE=false",
+            "both_time_control" : "10.0+0.10",
+            "workload_size"     : 32,
+            "test_bounds"     : "[-3.00, 0.00]",
+            "test_confidence" : "[0.05, 0.05]"
+        },
+
+        "HCE NRLTC" : {
+            "both_options"      : "Threads=1 Hash=64 NNUE=false",
+            "both_time_control" : "60.0+0.60",
+            "workload_size"     : 8,
+            "test_bounds"     : "[-3.00, 0.00]",
+            "test_confidence" : "[0.05, 0.05]"
         }
     },
 
